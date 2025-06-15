@@ -108,7 +108,7 @@ with col4:
 
 # === Druids ===
 st.subheader("🐻 Druids")
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 with col1:
     top_table("FAERIE FIRE", "spell_faerie_fire")
 with col2:
@@ -156,6 +156,15 @@ with col2:
     top_table("SCROLL OF AGILITY", "spell_scroll_of_agility")
 with col3:
     top_table("DRUMS OF BATTLE", "spell_drums_of_battle")
+
+st.subheader("✨ Buffs")
+col1, col2, col3 = st.columns(3)
+with col1:
+    top_table("FORTITUDE", "spell_fortitude")
+with col2:
+    top_table("INTELLECT", "spell_intellect")
+with col3:
+    top_table("MOTW", "spell_mark_of_the_wild")
 
 # === Resurrects ===
 top_table("Resurrects", "spell_resurrects")
